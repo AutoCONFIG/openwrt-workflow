@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-x86-SFE
+name: LEDE-x86-SFECM
 
 on:
   push:
@@ -99,7 +99,6 @@ jobs:
           # CONFIG_PACKAGE_kmod-crypto-hmac is not set
           # CONFIG_PACKAGE_kmod-crypto-kpp is not set
           # CONFIG_PACKAGE_kmod-crypto-md5 is not set
-          CONFIG_PACKAGE_kmod-fast-classifier=y
           # CONFIG_PACKAGE_kmod-fs-exfat is not set
           # CONFIG_PACKAGE_kmod-fs-ext4 is not set
           # CONFIG_PACKAGE_kmod-fs-ntfs3 is not set
@@ -116,7 +115,6 @@ jobs:
           CONFIG_PACKAGE_kmod-nf-nat6=y
           CONFIG_PACKAGE_kmod-nf-reject6=y
           # CONFIG_PACKAGE_kmod-scsi-core is not set
-          # CONFIG_PACKAGE_kmod-shortcut-fe-cm is not set
           CONFIG_PACKAGE_kmod-sit=y
           # CONFIG_PACKAGE_kmod-usb-storage is not set
           # CONFIG_PACKAGE_kmod-usb-storage-extras is not set
@@ -160,8 +158,6 @@ jobs:
           # CONFIG_PACKAGE_luci-app-samba4 is not set
           # CONFIG_PACKAGE_luci-app-ttyd is not set
           # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_PDNSD is not set
-          CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=y
-          # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM is not set
           # CONFIG_PACKAGE_luci-app-unblockmusic is not set
           # CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go is not set
           # CONFIG_PACKAGE_luci-app-vsftpd is not set
