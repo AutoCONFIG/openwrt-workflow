@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LALA-R66s-SFE
+name: LALA-R66s-SFECM
 
 on:
   push:
@@ -75,10 +75,12 @@ jobs:
           CONFIG_LUCI_LANG_zh_Hans=y
           CONFIG_PACKAGE_attendedsysupgrade-common=y
           CONFIG_PACKAGE_cgi-io=y
-          CONFIG_PACKAGE_kmod-fast-classifier=y
+          # CONFIG_PACKAGE_kmod-ipt-offload is not set
           CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
+          # CONFIG_PACKAGE_kmod-nf-flow is not set
           CONFIG_PACKAGE_kmod-nfnetlink=y
           CONFIG_PACKAGE_kmod-shortcut-fe=y
+          CONFIG_PACKAGE_kmod-shortcut-fe-cm=y
           CONFIG_PACKAGE_kmod-tcp-bbr=y
           CONFIG_PACKAGE_libcap-ng=y
           CONFIG_PACKAGE_libiwinfo=y
@@ -99,7 +101,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-opkg=y
           CONFIG_PACKAGE_luci-app-turboacc=y
           # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING is not set
-          CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=y
+          CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM=y
           CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-base=y
@@ -141,8 +143,6 @@ jobs:
           CONFIG_PACKAGE_uhttpd=y
           CONFIG_PACKAGE_uhttpd-mod-ubus=y
           CONFIG_PACKAGE_vlmcsd=y
-          # CONFIG_PACKAGE_kmod-shortcut-fe-cm is not set
-          # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM is not set
           EOF
 
           #
