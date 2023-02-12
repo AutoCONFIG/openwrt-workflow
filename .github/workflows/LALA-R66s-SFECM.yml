@@ -75,6 +75,7 @@ jobs:
           CONFIG_KSMBD_SMB_INSECURE_SERVER=y
           CONFIG_LUCI_LANG_zh_Hans=y
           CONFIG_PACKAGE_attendedsysupgrade-common=y
+          CONFIG_PACKAGE_block-mount=y
           CONFIG_PACKAGE_cgi-io=y
           CONFIG_PACKAGE_kmod-asn1-decoder=y
           CONFIG_PACKAGE_kmod-crypto-aead=y
