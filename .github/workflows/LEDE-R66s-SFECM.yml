@@ -78,7 +78,9 @@ jobs:
           CONFIG_GNUTLS_HEARTBEAT=y
           CONFIG_GNUTLS_OCSP=y
           CONFIG_GNUTLS_PSK=y
+          CONFIG_PACKAGE_6in4=y
           CONFIG_PACKAGE_attr=y
+          # CONFIG_PACKAGE_automount is not set
           CONFIG_PACKAGE_avahi-dbus-daemon=y
           # CONFIG_PACKAGE_coremark is not set
           # CONFIG_PACKAGE_curl is not set
@@ -87,11 +89,37 @@ jobs:
           # CONFIG_PACKAGE_ddns-scripts_aliyun is not set
           # CONFIG_PACKAGE_ddns-scripts_dnspod is not set
           # CONFIG_PACKAGE_etherwake is not set
+          CONFIG_PACKAGE_ip6tables=y
+          CONFIG_PACKAGE_ipv6helper=y
+          # CONFIG_PACKAGE_kmod-crypto-crc32c is not set
+          # CONFIG_PACKAGE_kmod-fs-exfat is not set
+          # CONFIG_PACKAGE_kmod-fs-ext4 is not set
+          # CONFIG_PACKAGE_kmod-fs-ntfs3 is not set
+          # CONFIG_PACKAGE_kmod-fs-vfat is not set
+          CONFIG_PACKAGE_kmod-ip6tables=y
+          CONFIG_PACKAGE_kmod-ipt-nat6=y
           # CONFIG_PACKAGE_kmod-ipt-offload is not set
+          CONFIG_PACKAGE_kmod-iptunnel=y
+          CONFIG_PACKAGE_kmod-iptunnel4=y
+          # CONFIG_PACKAGE_kmod-lib-crc16 is not set
           # CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
           # CONFIG_PACKAGE_kmod-nf-flow is not set
+          CONFIG_PACKAGE_kmod-nf-ipt6=y
+          CONFIG_PACKAGE_kmod-nf-log6=y
+          CONFIG_PACKAGE_kmod-nf-nat6=y
+          CONFIG_PACKAGE_kmod-nf-reject6=y
+          # CONFIG_PACKAGE_kmod-nls-base is not set
+          # CONFIG_PACKAGE_kmod-nls-cp437 is not set
+          # CONFIG_PACKAGE_kmod-nls-iso8859-1 is not set
+          # CONFIG_PACKAGE_kmod-nls-utf8 is not set
+          # CONFIG_PACKAGE_kmod-scsi-core is not set
           CONFIG_PACKAGE_kmod-shortcut-fe=y
           CONFIG_PACKAGE_kmod-shortcut-fe-cm=y
+          CONFIG_PACKAGE_kmod-sit=y
+          # CONFIG_PACKAGE_kmod-usb-core is not set
+          # CONFIG_PACKAGE_kmod-usb-storage is not set
+          # CONFIG_PACKAGE_kmod-usb-storage-extras is not set
+          # CONFIG_PACKAGE_kmod-usb-storage-uas is not set
           CONFIG_PACKAGE_libattr=y
           CONFIG_PACKAGE_libavahi-client=y
           CONFIG_PACKAGE_libavahi-dbus-support=y
@@ -127,7 +155,12 @@ jobs:
           # CONFIG_PACKAGE_luci-app-wol is not set
           CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
           # CONFIG_PACKAGE_luci-lib-fs is not set
+          CONFIG_PACKAGE_luci-proto-ipv6=y
           # CONFIG_PACKAGE_nlbwmon is not set
+          CONFIG_PACKAGE_odhcp6c=y
+          CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
+          CONFIG_PACKAGE_odhcpd-ipv6only=y
+          CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
           # CONFIG_PACKAGE_openssl-util is not set
           # CONFIG_PACKAGE_pdnsd-alt is not set
           CONFIG_PACKAGE_samba4-libs=y
