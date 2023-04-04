@@ -57,11 +57,15 @@ jobs:
         run: |
           rm -rf .git/ .github/
           git clone https://github.com/coolsnowwolf/lede.git ./
+          git clone https://github.com/AutoCONFIG/lala-openwrt-packages.git ./tmp/lala-openwrt-packages
           rm -rf package/lean/r8125
           sed -i "s/kmod-r8125/kmod-r8169/g" target/linux/rockchip/image/armv8.mk
 
       - name: Update feeds
         run: |
+          ./scripts/feeds update -a
+          rm -rf ./feeds/package/net/samba4
+          mv ./tmp/lala-openwrt-packages/net/samba4 ./feeds/package/net/samba4
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
