@@ -64,8 +64,8 @@ jobs:
       - name: Update feeds
         run: |
           ./scripts/feeds update -a
-          rm -rf ./feeds/package/net/samba4
-          mv ./tmp/lala-openwrt-packages/net/samba4 ./feeds/package/net/samba4
+          rm -rf ./feeds/packages/net/samba4
+          mv ./tmp/lala-openwrt-packages/net/samba4 ./feeds/packages/net/samba4
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
