@@ -182,6 +182,7 @@ jobs:
           # CONFIG_PACKAGE_wget-ssl is not set
           # CONFIG_PACKAGE_wol is not set
           CONFIG_PACKAGE_wsdd2=y
+          CONFIG_PACKAGE_zoneinfo-asia=y
           CONFIG_SAMBA4_SERVER_AVAHI=y
           CONFIG_SAMBA4_SERVER_NETBIOS=y
           CONFIG_SAMBA4_SERVER_VFS=y
