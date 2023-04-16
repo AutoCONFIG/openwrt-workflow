@@ -8,6 +8,9 @@
 name: LEDE-R66s-SFECM-TEST-Glibc
 
 on:
+  push:
+    branches: 
+      - master
   schedule:
     - cron: 0 20 * * *
 
