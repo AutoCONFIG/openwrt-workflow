@@ -80,7 +80,6 @@ jobs:
           CONFIG_LIBC="glibc"
           CONFIG_LIBC_USE_GLIBC=y
           # CONFIG_LIBC_USE_MUSL is not set
-          CONFIG_LINUX_6_1=y
           CONFIG_PACKAGE_6in4=y
           CONFIG_PACKAGE_attr=y
           # CONFIG_PACKAGE_automount is not set
@@ -181,7 +180,6 @@ jobs:
           CONFIG_SAMBA4_SERVER_WSDD2=y
           CONFIG_STRIP_ARGS="--strip-all"
           CONFIG_TARGET_SUFFIX="gnu"
-          CONFIG_TESTING_KERNEL=y
           CONFIG_USE_GLIBC=y
           CONFIG_USE_STRIP=y
           EOF
