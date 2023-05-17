@@ -54,6 +54,9 @@ jobs:
       - name: Update feeds
         run: |
           ./scripts/feeds update -a
+          rm -rf ./feeds/packages/net/samba4
+          mv ./tmp/packages/net/samba4 ./feeds/packages/net/samba4
+          ./scripts/feeds update -a
           ./scripts/feeds install -a
 
       - name: Generate configuration file
