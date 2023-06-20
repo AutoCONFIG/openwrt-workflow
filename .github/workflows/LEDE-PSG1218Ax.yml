@@ -64,12 +64,6 @@ jobs:
           CONFIG_TARGET_ramips=y
           CONFIG_TARGET_ramips_mt7620=y
           CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218a=y
-          CONFIG_DEVEL=y
-          CONFIG_TOOLCHAINOPTS=y
-          # CONFIG_GDB is not set
-          CONFIG_LIBC="glibc"
-          CONFIG_LIBC_USE_GLIBC=y
-          # CONFIG_LIBC_USE_MUSL is not set
           CONFIG_PACKAGE_6in4=y
           # CONFIG_PACKAGE_coremark is not set
           # CONFIG_PACKAGE_curl is not set
@@ -117,11 +111,6 @@ jobs:
           # CONFIG_PACKAGE_vsftpd-alt is not set
           # CONFIG_PACKAGE_wget-ssl is not set
           # CONFIG_PACKAGE_wol is not set
-          CONFIG_PACKAGE_zoneinfo-asia=y
-          CONFIG_STRIP_ARGS="--strip-all"
-          CONFIG_TARGET_SUFFIX="gnu"
-          CONFIG_USE_GLIBC=y
-          CONFIG_USE_STRIP=y
           EOF
 
           #
