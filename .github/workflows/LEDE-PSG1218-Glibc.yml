@@ -121,7 +121,7 @@ jobs:
           CONFIG_STRIP_ARGS="--strip-all"
           CONFIG_TARGET_SUFFIX="gnu"
           CONFIG_USE_GLIBC=y
-          CONFIG_USE_STRIP=y          
+          CONFIG_USE_STRIP=y
           EOF
 
           #
