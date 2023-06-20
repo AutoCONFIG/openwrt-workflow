@@ -65,6 +65,8 @@ jobs:
         run: |
           rm -f ./.config*
           touch ./.config
+        
+          cat >> .config <<EOF
           CONFIG_TARGET_rockchip=y
           CONFIG_TARGET_rockchip_armv8=y
           CONFIG_TARGET_rockchip_armv8_DEVICE_fastrhino_r66s=y
@@ -199,9 +201,7 @@ jobs:
           CONFIG_TARGET_SUFFIX="gnu"
           CONFIG_USE_GLIBC=y
           CONFIG_USE_STRIP=y
-          # CONFIG_PACKAGE_kmod-inet-diag is not set          
-          cat >> .config <<EOF
-
+          # CONFIG_PACKAGE_kmod-inet-diag is not set
           EOF
 
           #
