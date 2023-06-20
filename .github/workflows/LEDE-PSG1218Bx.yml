@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-PSG1218Ax-Glibc
+name: LEDE-PSG1218Bx
 
 on:
   push:
@@ -63,7 +63,7 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_ramips=y
           CONFIG_TARGET_ramips_mt7620=y
-          CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218a=y
+          CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218b=y
           CONFIG_DEVEL=y
           CONFIG_TOOLCHAINOPTS=y
           # CONFIG_GDB is not set
