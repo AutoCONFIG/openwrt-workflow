@@ -65,23 +65,17 @@ jobs:
         run: |
           rm -f ./.config*
           touch ./.config
-        
+
           cat >> .config <<EOF
           CONFIG_TARGET_rockchip=y
           CONFIG_TARGET_rockchip_armv8=y
           CONFIG_TARGET_rockchip_armv8_DEVICE_fastrhino_r66s=y
-          CONFIG_DEVEL=y
-          CONFIG_TOOLCHAINOPTS=y
-          # CONFIG_GDB is not set
           CONFIG_GNUTLS_ALPN=y
           CONFIG_GNUTLS_ANON=y
           CONFIG_GNUTLS_DTLS_SRTP=y
           CONFIG_GNUTLS_HEARTBEAT=y
           CONFIG_GNUTLS_OCSP=y
           CONFIG_GNUTLS_PSK=y
-          CONFIG_LIBC="glibc"
-          CONFIG_LIBC_USE_GLIBC=y
-          # CONFIG_LIBC_USE_MUSL is not set
           CONFIG_PACKAGE_6in4=y
           CONFIG_PACKAGE_attr=y
           # CONFIG_PACKAGE_automount is not set
@@ -102,6 +96,7 @@ jobs:
           # CONFIG_PACKAGE_kmod-fs-ext4 is not set
           # CONFIG_PACKAGE_kmod-fs-ntfs3 is not set
           # CONFIG_PACKAGE_kmod-fs-vfat is not set
+          CONFIG_PACKAGE_kmod-inet-diag=y
           CONFIG_PACKAGE_kmod-ip6tables=y
           CONFIG_PACKAGE_kmod-ipt-nat6=y
           # CONFIG_PACKAGE_kmod-ipt-offload is not set
@@ -192,16 +187,10 @@ jobs:
           # CONFIG_PACKAGE_wget-ssl is not set
           # CONFIG_PACKAGE_wol is not set
           CONFIG_PACKAGE_wsdd2=y
-          CONFIG_PACKAGE_zoneinfo-asia=y
           CONFIG_SAMBA4_SERVER_AVAHI=y
           CONFIG_SAMBA4_SERVER_NETBIOS=y
           CONFIG_SAMBA4_SERVER_VFS=y
           CONFIG_SAMBA4_SERVER_WSDD2=y
-          CONFIG_STRIP_ARGS="--strip-all"
-          CONFIG_TARGET_SUFFIX="gnu"
-          CONFIG_USE_GLIBC=y
-          CONFIG_USE_STRIP=y
-          # CONFIG_PACKAGE_kmod-inet-diag is not set
           EOF
 
           #
