@@ -78,11 +78,14 @@ jobs:
           CONFIG_PACKAGE_6in4=y
           # CONFIG_PACKAGE_UnblockNeteaseMusic-Go is not set
           # CONFIG_PACKAGE_adbyby is not set
+          # CONFIG_PACKAGE_attr is not set
           # CONFIG_PACKAGE_automount is not set
           # CONFIG_PACKAGE_autosamba is not set
+          # CONFIG_PACKAGE_avahi-dbus-daemon is not set
           # CONFIG_PACKAGE_blkid is not set
           # CONFIG_PACKAGE_coremark is not set
           # CONFIG_PACKAGE_curl is not set
+          # CONFIG_PACKAGE_dbus is not set
           # CONFIG_PACKAGE_ddns-scripts is not set
           # CONFIG_PACKAGE_ddns-scripts_aliyun is not set
           # CONFIG_PACKAGE_ddns-scripts_dnspod is not set
@@ -121,14 +124,28 @@ jobs:
           # CONFIG_PACKAGE_kmod-usb-storage-extras is not set
           # CONFIG_PACKAGE_kmod-usb-storage-uas is not set
           # CONFIG_PACKAGE_kmod-wireguard is not set
+          # CONFIG_PACKAGE_libattr is not set
+          # CONFIG_PACKAGE_libavahi-client is not set
+          # CONFIG_PACKAGE_libavahi-dbus-support is not set
+          # CONFIG_PACKAGE_libcap is not set
           # CONFIG_PACKAGE_libcurl is not set
+          # CONFIG_PACKAGE_libdaemon is not set
+          # CONFIG_PACKAGE_libdbus is not set
+          # CONFIG_PACKAGE_libexpat is not set
+          # CONFIG_PACKAGE_libgmp is not set
+          # CONFIG_PACKAGE_libgnutls is not set
           # CONFIG_PACKAGE_libiperf3 is not set
           # CONFIG_PACKAGE_libminiupnpc is not set
           # CONFIG_PACKAGE_libnatpmp is not set
+          # CONFIG_PACKAGE_libnettle is not set
           # CONFIG_PACKAGE_libnghttp2 is not set
           # CONFIG_PACKAGE_libparted is not set
           # CONFIG_PACKAGE_libpcre is not set
+          # CONFIG_PACKAGE_libpopt is not set
           # CONFIG_PACKAGE_libstdcpp is not set
+          # CONFIG_PACKAGE_libtasn1 is not set
+          # CONFIG_PACKAGE_libtirpc is not set
+          # CONFIG_PACKAGE_liburing is not set
           # CONFIG_PACKAGE_libuv is not set
           # CONFIG_PACKAGE_libwebsockets-full is not set
           # CONFIG_PACKAGE_luci-app-accesscontrol is not set
@@ -142,6 +159,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-nlbwmon is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
+          # CONFIG_PACKAGE_luci-app-samba4 is not set
           # CONFIG_PACKAGE_luci-app-ttyd is not set
           # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA is not set
           # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_PDNSD is not set
@@ -165,6 +183,8 @@ jobs:
           # CONFIG_PACKAGE_parted is not set
           # CONFIG_PACKAGE_pdnsd-alt is not set
           # CONFIG_PACKAGE_proto-bonding is not set
+          # CONFIG_PACKAGE_samba4-libs is not set
+          # CONFIG_PACKAGE_samba4-server is not set
           # CONFIG_PACKAGE_smartmontools is not set
           # CONFIG_PACKAGE_strongswan is not set
           # CONFIG_PACKAGE_ttyd is not set
@@ -172,77 +192,13 @@ jobs:
           # CONFIG_PACKAGE_wget-ssl is not set
           # CONFIG_PACKAGE_wireguard-tools is not set
           # CONFIG_PACKAGE_wol is not set
+          # CONFIG_PACKAGE_wsdd2 is not set
           # CONFIG_PACKAGE_zerotier is not set
+          CONFIG_PACKAGE_zoneinfo-asia=y
           CONFIG_STRIP_ARGS="--strip-all"
           CONFIG_TARGET_SUFFIX="gnu"
           CONFIG_USE_GLIBC=y
           CONFIG_USE_STRIP=y
-          CONFIG_GNUTLS_ALPN=y
-          CONFIG_GNUTLS_ANON=y
-          # CONFIG_GNUTLS_CRYPTODEV is not set
-          CONFIG_GNUTLS_DTLS_SRTP=y
-          # CONFIG_GNUTLS_EXT_LIBTASN1 is not set
-          CONFIG_GNUTLS_HEARTBEAT=y
-          CONFIG_GNUTLS_OCSP=y
-          # CONFIG_GNUTLS_PKCS11 is not set
-          CONFIG_GNUTLS_PSK=y
-          # CONFIG_GNUTLS_SRP is not set
-          # CONFIG_GNUTLS_TPM is not set
-          # CONFIG_LIBNETTLE_MINI is not set
-          CONFIG_PACKAGE_attr=y
-          CONFIG_PACKAGE_avahi-dbus-daemon=y
-          CONFIG_PACKAGE_dbus=y
-          CONFIG_PACKAGE_libattr=y
-          CONFIG_PACKAGE_libavahi-client=y
-          CONFIG_PACKAGE_libavahi-dbus-support=y
-          CONFIG_PACKAGE_libcap=y
-          # CONFIG_PACKAGE_libcap-bin is not set
-          CONFIG_PACKAGE_libdaemon=y
-          CONFIG_PACKAGE_libdbus=y
-          CONFIG_PACKAGE_libexpat=y
-          CONFIG_PACKAGE_libgmp=y
-          CONFIG_PACKAGE_libgnutls=y
-          CONFIG_PACKAGE_libnettle=y
-          CONFIG_PACKAGE_libpopt=y
-          CONFIG_PACKAGE_libtasn1=y
-          CONFIG_PACKAGE_libtirpc=y
-          CONFIG_PACKAGE_liburing=y
-          CONFIG_PACKAGE_luci-app-samba4=y
-          # CONFIG_PACKAGE_luci-i18n-samba4-ca is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-cs is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-de is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-el is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-en is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-es is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-fr is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-he is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-hu is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-it is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-ja is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-ms is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-no is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-pl is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-pt is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-pt-br is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-ro is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-ru is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-sk is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-sv is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-tr is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-uk is not set
-          # CONFIG_PACKAGE_luci-i18n-samba4-vi is not set
-          CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
-          # CONFIG_PACKAGE_luci-i18n-samba4-zh-tw is not set
-          CONFIG_PACKAGE_samba4-libs=y
-          CONFIG_PACKAGE_samba4-server=y
-          CONFIG_PACKAGE_wsdd2=y
-          # CONFIG_SAMBA4_SERVER_AD_DC is not set
-          CONFIG_SAMBA4_SERVER_AVAHI=y
-          CONFIG_SAMBA4_SERVER_NETBIOS=y
-          # CONFIG_SAMBA4_SERVER_QUOTAS is not set
-          CONFIG_SAMBA4_SERVER_VFS=y
-          # CONFIG_SAMBA4_SERVER_VFSX is not set
-          CONFIG_SAMBA4_SERVER_WSDD2=y
           EOF
 
           #
