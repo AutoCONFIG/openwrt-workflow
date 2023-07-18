@@ -49,15 +49,11 @@ jobs:
         run: |
           rm -rf .git/ .github/
           git clone https://github.com/coolsnowwolf/lede.git ./
-          git clone https://git.openwrt.org/feed/packages.git ./tmp/packages
           git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
           mv package/OpenClash/luci-app-openclash package/luci-app-openclash && rm -rf package/OpenClash/
 
       - name: Update feeds
         run: |
-          ./scripts/feeds update -a
-          rm -rf ./feeds/packages/net/samba4
-          mv ./tmp/packages/net/samba4 ./feeds/packages/net/samba4
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
