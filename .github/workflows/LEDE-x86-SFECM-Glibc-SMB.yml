@@ -173,6 +173,7 @@ jobs:
           # CONFIG_PACKAGE_wireguard-tools is not set
           # CONFIG_PACKAGE_wol is not set
           # CONFIG_PACKAGE_zerotier is not set
+          CONFIG_PACKAGE_zoneinfo-asia=y
           CONFIG_STRIP_ARGS="--strip-all"
           CONFIG_TARGET_SUFFIX="gnu"
           CONFIG_USE_GLIBC=y
