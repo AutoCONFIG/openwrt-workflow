@@ -138,6 +138,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-ddns is not set
           # CONFIG_PACKAGE_luci-app-diskman is not set
           # CONFIG_PACKAGE_luci-app-filetransfer is not set
+          CONFIG_PACKAGE_luci-app-pppoe-relay=y
           # CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set
           # CONFIG_PACKAGE_luci-app-nlbwmon is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
