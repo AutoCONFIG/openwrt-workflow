@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-PSG1218Ax
+name: LEDE-PSG1208
 
 on:
   push:
