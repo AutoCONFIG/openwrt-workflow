@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-R66s-SFECM
+name: LEDE-R66s-SFECM-Glibc
 
 on:
   push:
@@ -49,9 +49,13 @@ jobs:
         run: |
           rm -rf .git/ .github/
           git clone https://github.com/coolsnowwolf/lede.git ./
+          git clone https://git.openwrt.org/feed/packages.git ./tmp/packages
 
       - name: Update feeds
         run: |
+          ./scripts/feeds update -a
+          rm -rf ./feeds/packages/net/samba4
+          mv ./tmp/packages/net/samba4 ./feeds/packages/net/samba4
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
