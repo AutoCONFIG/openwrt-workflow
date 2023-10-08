@@ -44,7 +44,7 @@ jobs:
 
       - name: Clone source
         run: |
-          rm -rf .git/ .github/
+          rm -rf .git/ .github/ *
           git clone https://github.com/AutoCONFIG/lala-openwrt.git ./
 
       - name: Update feeds

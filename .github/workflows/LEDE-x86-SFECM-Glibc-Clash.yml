@@ -49,7 +49,7 @@ jobs:
 
       - name: Clone source
         run: |
-          rm -rf .git/ .github/
+          rm -rf .git/ .github/ *
           git clone https://github.com/coolsnowwolf/lede.git ./
           git clone https://git.openwrt.org/feed/packages.git ./tmp/packages
           git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
