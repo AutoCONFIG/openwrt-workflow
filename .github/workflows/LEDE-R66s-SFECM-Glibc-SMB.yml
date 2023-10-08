@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-R66s-SFECM-Glibc
+name: LEDE-R66s-SFECM-Glibc-SMB
 
 on:
   push:
@@ -82,7 +82,7 @@ jobs:
           # CONFIG_LIBC_USE_MUSL is not set
           CONFIG_PACKAGE_6in4=y
           CONFIG_PACKAGE_attr=y
-          # CONFIG_PACKAGE_automount is not set
+          CONFIG_PACKAGE_autosamba=y
           CONFIG_PACKAGE_avahi-dbus-daemon=y
           # CONFIG_PACKAGE_coremark is not set
           # CONFIG_PACKAGE_curl is not set
@@ -93,36 +93,21 @@ jobs:
           # CONFIG_PACKAGE_etherwake is not set
           CONFIG_PACKAGE_ip6tables=y
           CONFIG_PACKAGE_ipv6helper=y
-          # CONFIG_PACKAGE_kmod-crypto-crc32c is not set
-          # CONFIG_PACKAGE_kmod-fs-exfat is not set
-          # CONFIG_PACKAGE_kmod-fs-ext4 is not set
-          # CONFIG_PACKAGE_kmod-fs-ntfs3 is not set
-          # CONFIG_PACKAGE_kmod-fs-vfat is not set
           CONFIG_PACKAGE_kmod-ip6tables=y
           CONFIG_PACKAGE_kmod-ipt-nat6=y
           # CONFIG_PACKAGE_kmod-ipt-offload is not set
           CONFIG_PACKAGE_kmod-iptunnel=y
           CONFIG_PACKAGE_kmod-iptunnel4=y
-          # CONFIG_PACKAGE_kmod-lib-crc16 is not set
           # CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
           # CONFIG_PACKAGE_kmod-nf-flow is not set
           CONFIG_PACKAGE_kmod-nf-ipt6=y
           CONFIG_PACKAGE_kmod-nf-log6=y
           CONFIG_PACKAGE_kmod-nf-nat6=y
           CONFIG_PACKAGE_kmod-nf-reject6=y
-          # CONFIG_PACKAGE_kmod-nls-base is not set
-          # CONFIG_PACKAGE_kmod-nls-cp437 is not set
-          # CONFIG_PACKAGE_kmod-nls-iso8859-1 is not set
-          # CONFIG_PACKAGE_kmod-nls-utf8 is not set
-          # CONFIG_PACKAGE_kmod-scsi-core is not set
           CONFIG_PACKAGE_kmod-shortcut-fe=y
           CONFIG_PACKAGE_kmod-shortcut-fe-cm=y
           CONFIG_PACKAGE_kmod-sit=y
           # CONFIG_PACKAGE_kmod-tcp-bbr is not set
-          # CONFIG_PACKAGE_kmod-usb-core is not set
-          # CONFIG_PACKAGE_kmod-usb-storage is not set
-          # CONFIG_PACKAGE_kmod-usb-storage-extras is not set
-          # CONFIG_PACKAGE_kmod-usb-storage-uas is not set
           CONFIG_PACKAGE_libattr=y
           CONFIG_PACKAGE_libavahi-client=y
           CONFIG_PACKAGE_libavahi-dbus-support=y
@@ -145,7 +130,6 @@ jobs:
           # CONFIG_PACKAGE_luci-app-arpbind is not set
           # CONFIG_PACKAGE_luci-app-autoreboot is not set
           # CONFIG_PACKAGE_luci-app-ddns is not set
-          # CONFIG_PACKAGE_luci-app-filetransfer is not set
           # CONFIG_PACKAGE_luci-app-nlbwmon is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
@@ -158,7 +142,6 @@ jobs:
           # CONFIG_PACKAGE_luci-app-vsftpd is not set
           # CONFIG_PACKAGE_luci-app-wol is not set
           CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
-          # CONFIG_PACKAGE_luci-lib-fs is not set
           CONFIG_PACKAGE_luci-proto-ipv6=y
           # CONFIG_PACKAGE_nlbwmon is not set
           CONFIG_PACKAGE_odhcp6c=y
