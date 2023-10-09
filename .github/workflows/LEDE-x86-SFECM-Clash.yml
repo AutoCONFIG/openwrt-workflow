@@ -50,6 +50,7 @@ jobs:
       - name: Clone source
         run: |
           rm -rf .git/ .github/ *
+          git clone https://github.com/coolsnowwolf/lede.git ./
           git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
           mv package/OpenClash/luci-app-openclash package/luci-app-openclash && rm -rf package/OpenClash/
 
