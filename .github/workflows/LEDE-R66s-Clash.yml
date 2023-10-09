@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-R66s-SFECM-Glibc-Clash
+name: LEDE-R66s-Clash
 
 on:
   push:
@@ -49,15 +49,11 @@ jobs:
         run: |
           rm -rf .git/ .github/ *
           git clone https://github.com/coolsnowwolf/lede.git ./
-          git clone https://git.openwrt.org/feed/packages.git ./tmp/packages
           git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
           mv package/OpenClash/luci-app-openclash package/luci-app-openclash && rm -rf package/OpenClash/
 
       - name: Update feeds
         run: |
-          ./scripts/feeds update -a
-          rm -rf ./feeds/packages/net/samba4
-          mv ./tmp/packages/net/samba4 ./feeds/packages/net/samba4
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
@@ -70,18 +66,12 @@ jobs:
           CONFIG_TARGET_rockchip=y
           CONFIG_TARGET_rockchip_armv8=y
           CONFIG_TARGET_rockchip_armv8_DEVICE_fastrhino_r66s=y
-          CONFIG_DEVEL=y
-          CONFIG_TOOLCHAINOPTS=y
-          # CONFIG_GDB is not set
           CONFIG_GNUTLS_ALPN=y
           CONFIG_GNUTLS_ANON=y
           CONFIG_GNUTLS_DTLS_SRTP=y
           CONFIG_GNUTLS_HEARTBEAT=y
           CONFIG_GNUTLS_OCSP=y
           CONFIG_GNUTLS_PSK=y
-          CONFIG_LIBC="glibc"
-          CONFIG_LIBC_USE_GLIBC=y
-          # CONFIG_LIBC_USE_MUSL is not set
           CONFIG_PACKAGE_6in4=y
           CONFIG_PACKAGE_attr=y
           CONFIG_PACKAGE_autosamba=y
@@ -97,19 +87,16 @@ jobs:
           # CONFIG_PACKAGE_etherwake is not set
           CONFIG_PACKAGE_ip6tables=y
           CONFIG_PACKAGE_ipv6helper=y
+          CONFIG_PACKAGE_kmod-inet-diag=y
           CONFIG_PACKAGE_kmod-ip6tables=y
           CONFIG_PACKAGE_kmod-ipt-nat6=y
-          # CONFIG_PACKAGE_kmod-ipt-offload is not set
           CONFIG_PACKAGE_kmod-iptunnel=y
           CONFIG_PACKAGE_kmod-iptunnel4=y
           # CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
-          # CONFIG_PACKAGE_kmod-nf-flow is not set
           CONFIG_PACKAGE_kmod-nf-ipt6=y
           CONFIG_PACKAGE_kmod-nf-log6=y
           CONFIG_PACKAGE_kmod-nf-nat6=y
           CONFIG_PACKAGE_kmod-nf-reject6=y
-          CONFIG_PACKAGE_kmod-shortcut-fe=y
-          CONFIG_PACKAGE_kmod-shortcut-fe-cm=y
           CONFIG_PACKAGE_kmod-sit=y
           # CONFIG_PACKAGE_kmod-tcp-bbr is not set
           CONFIG_PACKAGE_libattr=y
@@ -133,8 +120,6 @@ jobs:
           CONFIG_PACKAGE_liburing=y
           CONFIG_PACKAGE_libyaml=y
           # CONFIG_PACKAGE_luci-app-accesscontrol is not set
-          # CONFIG_PACKAGE_luci-app-arpbind is not set
-          # CONFIG_PACKAGE_luci-app-autoreboot is not set
           # CONFIG_PACKAGE_luci-app-ddns is not set
           # CONFIG_PACKAGE_luci-app-nlbwmon is not set
           CONFIG_PACKAGE_luci-app-openclash=y
@@ -142,9 +127,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
           CONFIG_PACKAGE_luci-app-samba4=y
           # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA is not set
-          # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING is not set
           # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_PDNSD is not set
-          CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM=y
           # CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go is not set
           # CONFIG_PACKAGE_luci-app-vsftpd is not set
           # CONFIG_PACKAGE_luci-app-wol is not set
@@ -175,16 +158,10 @@ jobs:
           # CONFIG_PACKAGE_wget-ssl is not set
           # CONFIG_PACKAGE_wol is not set
           CONFIG_PACKAGE_wsdd2=y
-          CONFIG_PACKAGE_zoneinfo-asia=y
           CONFIG_SAMBA4_SERVER_AVAHI=y
           CONFIG_SAMBA4_SERVER_NETBIOS=y
           CONFIG_SAMBA4_SERVER_VFS=y
           CONFIG_SAMBA4_SERVER_WSDD2=y
-          CONFIG_STRIP_ARGS="--strip-all"
-          CONFIG_TARGET_SUFFIX="gnu"
-          CONFIG_USE_GLIBC=y
-          CONFIG_USE_STRIP=y
-          # CONFIG_PACKAGE_kmod-inet-diag is not set
           EOF
 
           #
