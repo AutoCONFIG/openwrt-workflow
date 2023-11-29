@@ -100,7 +100,6 @@ jobs:
           CONFIG_PACKAGE_liburing=y
           CONFIG_PACKAGE_lua=y
           CONFIG_PACKAGE_luci=y
-          CONFIG_PACKAGE_luci-compat=y
           CONFIG_PACKAGE_luci-app-arpbind=y
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk is not set
@@ -110,12 +109,10 @@ jobs:
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
           CONFIG_PACKAGE_luci-app-samba4=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ChinaDNS_NG is not set
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client is not set
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Simple_Obfs is not set
           CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-base=y
+          CONFIG_PACKAGE_luci-compat=y
           CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn=y
