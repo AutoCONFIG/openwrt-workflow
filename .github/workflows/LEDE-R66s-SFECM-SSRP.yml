@@ -78,7 +78,6 @@ jobs:
           CONFIG_PACKAGE_avahi-dbus-daemon=y
           CONFIG_PACKAGE_bash=y
           # CONFIG_PACKAGE_coremark is not set
-          CONFIG_PACKAGE_coreutils=y
           CONFIG_PACKAGE_coreutils-nohup=y
           CONFIG_PACKAGE_dbus=y
           # CONFIG_PACKAGE_ddns-scripts is not set
@@ -115,7 +114,6 @@ jobs:
           CONFIG_PACKAGE_libgmp=y
           CONFIG_PACKAGE_libgnutls=y
           CONFIG_PACKAGE_libnettle=y
-          # CONFIG_PACKAGE_libpcre is not set
           CONFIG_PACKAGE_libpopt=y
           CONFIG_PACKAGE_libreadline=y
           CONFIG_PACKAGE_libruby=y
@@ -126,7 +124,6 @@ jobs:
           # CONFIG_PACKAGE_luci-app-accesscontrol is not set
           # CONFIG_PACKAGE_luci-app-ddns is not set
           # CONFIG_PACKAGE_luci-app-nlbwmon is not set
-          CONFIG_PACKAGE_luci-app-ssr-plus=y
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
           CONFIG_PACKAGE_luci-app-samba4=y
