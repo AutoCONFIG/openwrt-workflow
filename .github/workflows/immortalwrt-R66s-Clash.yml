@@ -94,7 +94,6 @@ jobs:
           CONFIG_PACKAGE_curl=y
           CONFIG_PACKAGE_dbus=y
           CONFIG_PACKAGE_ip-full=y
-          CONFIG_PACKAGE_ip-tiny=y
           CONFIG_PACKAGE_kmod-inet-diag=y
           CONFIG_PACKAGE_kmod-nf-tproxy=y
           CONFIG_PACKAGE_kmod-nft-tproxy=y
@@ -154,7 +153,6 @@ jobs:
           CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
           CONFIG_PACKAGE_luci-lib-base=y
-          CONFIG_PACKAGE_luci-lib-fs=y
           CONFIG_PACKAGE_luci-lib-ip=y
           CONFIG_PACKAGE_luci-lib-jsonc=y
           CONFIG_PACKAGE_luci-lib-nixio=y
