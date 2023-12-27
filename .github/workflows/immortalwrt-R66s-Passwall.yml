@@ -102,6 +102,7 @@ jobs:
           CONFIG_MBEDTLS_NIST_KW_C=y
           CONFIG_MBEDTLS_RSA_NO_CRT=y
           CONFIG_PACKAGE_attr=y
+          CONFIG_PACKAGE_autocore=y
           CONFIG_PACKAGE_avahi-dbus-daemon=y
           CONFIG_PACKAGE_boost=y
           CONFIG_PACKAGE_boost-program_options=y
@@ -117,7 +118,6 @@ jobs:
           CONFIG_PACKAGE_dns2tcp=y
           CONFIG_PACKAGE_haproxy=y
           CONFIG_PACKAGE_ip-full=y
-          CONFIG_PACKAGE_ip-tiny=y
           CONFIG_PACKAGE_ipt2socks=y
           CONFIG_PACKAGE_kmod-inet-diag=y
           CONFIG_PACKAGE_kmod-netlink-diag=y
@@ -132,7 +132,6 @@ jobs:
           CONFIG_PACKAGE_libavahi-dbus-support=y
           CONFIG_PACKAGE_libbpf=y
           CONFIG_PACKAGE_libcap=y
-          CONFIG_PACKAGE_libcap-ng=y
           CONFIG_PACKAGE_libcares=y
           CONFIG_PACKAGE_libcurl=y
           CONFIG_PACKAGE_libdaemon=y
@@ -166,30 +165,25 @@ jobs:
           CONFIG_PACKAGE_lua=y
           CONFIG_PACKAGE_luci=y
           CONFIG_PACKAGE_luci-app-arpbind=y
+          CONFIG_PACKAGE_luci-app-autoreboot=y
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk is not set
-          CONFIG_PACKAGE_luci-app-filetransfer=y
           CONFIG_PACKAGE_luci-app-firewall=y
           CONFIG_PACKAGE_luci-app-opkg=y
           CONFIG_PACKAGE_luci-app-passwall=y
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
           CONFIG_PACKAGE_luci-app-samba4=y
-          CONFIG_PACKAGE_luci-app-upnp=y
-          CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-base=y
           CONFIG_PACKAGE_luci-compat=y
           CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
           CONFIG_PACKAGE_luci-lib-base=y
-          CONFIG_PACKAGE_luci-lib-fs=y
           CONFIG_PACKAGE_luci-lib-ip=y
           CONFIG_PACKAGE_luci-lib-jsonc=y
           CONFIG_PACKAGE_luci-lib-nixio=y
@@ -203,7 +197,6 @@ jobs:
           CONFIG_PACKAGE_luci-proto-ppp=y
           CONFIG_PACKAGE_luci-theme-bootstrap=y
           CONFIG_PACKAGE_microsocks=y
-          CONFIG_PACKAGE_miniupnpd-nftables=y
           CONFIG_PACKAGE_resolveip=y
           CONFIG_PACKAGE_rpcd=y
           CONFIG_PACKAGE_rpcd-mod-file=y
@@ -231,7 +224,6 @@ jobs:
           CONFIG_PACKAGE_uhttpd-mod-ubus=y
           CONFIG_PACKAGE_unzip=y
           CONFIG_PACKAGE_v2ray-plugin=y
-          CONFIG_PACKAGE_vlmcsd=y
           CONFIG_PACKAGE_wsdd2=y
           CONFIG_PACKAGE_xray-core=y
           CONFIG_PACKAGE_zlib=y
@@ -240,6 +232,7 @@ jobs:
           CONFIG_SAMBA4_SERVER_VFS=y
           CONFIG_SAMBA4_SERVER_WSDD2=y
           CONFIG_SING_BOX_BUILD_CLASH_API=y
+          CONFIG_SING_BOX_BUILD_ECH=y
           CONFIG_SING_BOX_BUILD_GVISOR=y
           CONFIG_SING_BOX_BUILD_QUIC=y
           CONFIG_SING_BOX_BUILD_UTLS=y
