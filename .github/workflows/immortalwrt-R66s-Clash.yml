@@ -84,6 +84,7 @@ jobs:
           CONFIG_LIBCURL_UNIX_SOCKETS=y
           CONFIG_LUCI_LANG_zh_Hans=y
           CONFIG_PACKAGE_attr=y
+          CONFIG_PACKAGE_autocore=y
           CONFIG_PACKAGE_avahi-dbus-daemon=y
           CONFIG_PACKAGE_bash=y
           CONFIG_PACKAGE_ca-certificates=y
@@ -131,9 +132,9 @@ jobs:
           CONFIG_PACKAGE_lua=y
           CONFIG_PACKAGE_luci=y
           CONFIG_PACKAGE_luci-app-arpbind=y
+          CONFIG_PACKAGE_luci-app-autoreboot=y
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk is not set
-          CONFIG_PACKAGE_luci-app-filetransfer=y
           CONFIG_PACKAGE_luci-app-firewall=y
           CONFIG_PACKAGE_luci-app-openclash=y
           CONFIG_PACKAGE_luci-app-opkg=y
@@ -145,8 +146,8 @@ jobs:
           CONFIG_PACKAGE_luci-base=y
           CONFIG_PACKAGE_luci-compat=y
           CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
-          CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
