@@ -139,7 +139,7 @@ jobs:
           CONFIG_SAMBA4_SERVER_AVAHI=y
           CONFIG_SAMBA4_SERVER_NETBIOS=y
           CONFIG_SAMBA4_SERVER_VFS=y
-          CONFIG_SAMBA4_SERVER_WSDD2=y          
+          CONFIG_SAMBA4_SERVER_WSDD2=y
           EOF
 
           #
