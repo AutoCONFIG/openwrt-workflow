@@ -74,6 +74,7 @@ jobs:
           CONFIG_GNUTLS_PSK=y
           CONFIG_PACKAGE_6in4=y
           CONFIG_PACKAGE_attr=y
+          CONFIG_PACKAGE_autosamba=y
           CONFIG_PACKAGE_avahi-dbus-daemon=y
           CONFIG_PACKAGE_bash=y
           # CONFIG_PACKAGE_coremark is not set
@@ -83,6 +84,7 @@ jobs:
           # CONFIG_PACKAGE_etherwake is not set
           CONFIG_PACKAGE_ip6tables=y
           CONFIG_PACKAGE_ipv6helper=y
+          CONFIG_PACKAGE_kmod-inet-diag=y
           CONFIG_PACKAGE_kmod-ip6tables=y
           CONFIG_PACKAGE_kmod-ipt-nat6=y
           # CONFIG_PACKAGE_kmod-ipt-offload is not set
@@ -159,7 +161,6 @@ jobs:
           CONFIG_SAMBA4_SERVER_NETBIOS=y
           CONFIG_SAMBA4_SERVER_VFS=y
           CONFIG_SAMBA4_SERVER_WSDD2=y
-          # CONFIG_PACKAGE_kmod-inet-diag is not set
           EOF
 
           #
