@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-R66s-SFECM-Basic
+name: LEDE-R66s-SFECM-Lite
 
 on:
   push:
