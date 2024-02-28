@@ -63,11 +63,13 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_ramips=y
           CONFIG_TARGET_ramips_mt7620=y
-          CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_k2-v22.4=y
+          CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_k2-v22.5=y
+          CONFIG_PACKAGE_ip-tiny=y
           CONFIG_PACKAGE_libcap-ng=y
           CONFIG_PACKAGE_librt=y
           CONFIG_PACKAGE_libuuid=y
           CONFIG_PACKAGE_luci-app-accesscontrol=y
+          CONFIG_PACKAGE_luci-app-arpbind=y
           CONFIG_PACKAGE_luci-app-autoreboot=y
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk is not set
@@ -76,6 +78,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-i18n-accesscontrol-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
