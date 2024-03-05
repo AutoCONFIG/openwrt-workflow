@@ -97,6 +97,7 @@ jobs:
           CONFIG_PACKAGE_libreadline=y
           CONFIG_PACKAGE_libruby=y
           CONFIG_PACKAGE_libyaml=y
+          CONFIG_PACKAGE_luci-app-arpbind=y
           CONFIG_PACKAGE_luci-app-autoreboot=y
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk is not set
@@ -105,6 +106,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
           CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
+          CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
