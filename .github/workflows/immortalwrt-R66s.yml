@@ -48,7 +48,7 @@ jobs:
       - name: Clone source
         run: |
           rm -rf .git/ .github/ *
-          git clone --branch=openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git ./
+          git clone --depth=1 --branch=openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git ./
 
       - name: Update feeds
         run: |
