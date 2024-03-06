@@ -124,7 +124,7 @@ jobs:
           CONFIG_PACKAGE_unzip=y
           CONFIG_PACKAGE_vlmcsd=y
           CONFIG_PACKAGE_zlib=y
-          CONFIG_TARGET_ROOTFS_PARTSIZE=7168
+          CONFIG_TARGET_ROOTFS_PARTSIZE=1024
           EOF
 
           #
