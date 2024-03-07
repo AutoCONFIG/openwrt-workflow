@@ -49,10 +49,13 @@ jobs:
         run: |
           rm -rf .git/ .github/ *
           git clone --depth=1 --branch=openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git ./
+          git clone --depth=1 --branch=main https://github.com/AutoCONFIG/minieap-openwrt.git package/minieap-openwrt
+          git clone --depth=1 --branch=HustLion https://github.com/AutoCONFIG/mentohust-openwrt.git package/mentohust-openwrt
 
       - name: Update feeds
         run: |
           ./scripts/feeds update -a
+          rm -rf feeds/packages/net/mentohust/ feeds/packages/net/minieap/
           ./scripts/feeds install -a
 
       - name: Generate configuration file
@@ -134,6 +137,7 @@ jobs:
           CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
+          CONFIG_PACKAGE_minieap=y
           CONFIG_PACKAGE_miniupnpd-nftables=y
           CONFIG_PACKAGE_ruby=y
           CONFIG_PACKAGE_ruby-bigdecimal=y
