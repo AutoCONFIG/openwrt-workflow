@@ -5,14 +5,14 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-R66s-SFECM-Samba
+name: immortalwrt-R66s-Samba
 
 on:
   push:
     branches: 
       - master
   schedule:
-    - cron: 0 20 * * *
+    - cron: 0 22 * * 5
 
 permissions:
   contents: read
@@ -48,9 +48,11 @@ jobs:
       - name: Clone source
         run: |
           rm -rf .git/ .github/ *
-          git clone https://github.com/coolsnowwolf/lede.git ./
+          git clone --depth=1 https://github.com/coolsnowwolf/lede.git ./
           git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
-          mv package/OpenClash/luci-app-openclash package/luci-app-openclash && rm -rf package/OpenClash/
+          git clone --depth=1 --branch=main https://github.com/AutoCONFIG/minieap-openwrt.git package/minieap-openwrt
+          git clone --depth=1 --branch=HustLion https://github.com/AutoCONFIG/mentohust-openwrt.git package/mentohust-openwrt
+          mv package/OpenClash/luci-app-openclash package/luci-app-openclash && rm -rf package/OpenClash/ package/lean/mentohust/
 
       - name: Update feeds
         run: |
@@ -123,6 +125,7 @@ jobs:
           CONFIG_PACKAGE_libtirpc=y
           CONFIG_PACKAGE_liburing=y
           CONFIG_PACKAGE_libyaml=y
+          # CONFIG_PACKAGE_luci-app-accesscontrol is not set
           # CONFIG_PACKAGE_luci-app-ddns is not set
           # CONFIG_PACKAGE_luci-app-nlbwmon is not set
           CONFIG_PACKAGE_luci-app-openclash=y
@@ -138,6 +141,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-wol is not set
           CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
           CONFIG_PACKAGE_luci-proto-ipv6=y
+          CONFIG_PACKAGE_minieap=y
           # CONFIG_PACKAGE_nlbwmon is not set
           CONFIG_PACKAGE_odhcp6c=y
           CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
@@ -167,6 +171,7 @@ jobs:
           CONFIG_SAMBA4_SERVER_NETBIOS=y
           CONFIG_SAMBA4_SERVER_VFS=y
           CONFIG_SAMBA4_SERVER_WSDD2=y
+          CONFIG_TARGET_ROOTFS_PARTSIZE=1024
           EOF
 
           #
