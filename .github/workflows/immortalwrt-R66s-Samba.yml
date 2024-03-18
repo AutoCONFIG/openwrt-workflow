@@ -85,6 +85,7 @@ jobs:
           CONFIG_LIBCURL_THREADED_RESOLVER=y
           CONFIG_LIBCURL_TLS_SRP=y
           CONFIG_LIBCURL_UNIX_SOCKETS=y
+          CONFIG_NFS_KERNEL_SERVER_V4=y
           CONFIG_PACKAGE_attr=y
           CONFIG_PACKAGE_autosamba=y
           CONFIG_PACKAGE_avahi-dbus-daemon=y
@@ -95,9 +96,32 @@ jobs:
           CONFIG_PACKAGE_curl=y
           CONFIG_PACKAGE_dbus=y
           CONFIG_PACKAGE_ip-full=y
+          CONFIG_PACKAGE_kmod-asn1-encoder=y
+          CONFIG_PACKAGE_kmod-crypto-cbc=y
+          CONFIG_PACKAGE_kmod-crypto-cts=y
+          CONFIG_PACKAGE_kmod-crypto-des=y
+          CONFIG_PACKAGE_kmod-crypto-hmac=y
+          CONFIG_PACKAGE_kmod-crypto-md5=y
+          CONFIG_PACKAGE_kmod-crypto-rng=y
+          CONFIG_PACKAGE_kmod-crypto-sha256=y
+          CONFIG_PACKAGE_kmod-crypto-sha512=y
+          CONFIG_PACKAGE_kmod-dax=y
+          CONFIG_PACKAGE_kmod-dm=y
+          CONFIG_PACKAGE_kmod-dnsresolver=y
+          CONFIG_PACKAGE_kmod-fs-exportfs=y
+          CONFIG_PACKAGE_kmod-fs-nfs=y
+          CONFIG_PACKAGE_kmod-fs-nfs-common=y
+          CONFIG_PACKAGE_kmod-fs-nfs-common-rpcsec=y
+          CONFIG_PACKAGE_kmod-fs-nfs-v4=y
+          CONFIG_PACKAGE_kmod-fs-nfsd=y
           CONFIG_PACKAGE_kmod-inet-diag=y
+          CONFIG_PACKAGE_kmod-keys-encrypted=y
+          CONFIG_PACKAGE_kmod-keys-trusted=y
           CONFIG_PACKAGE_kmod-nf-tproxy=y
           CONFIG_PACKAGE_kmod-nft-tproxy=y
+          CONFIG_PACKAGE_kmod-oid-registry=y
+          CONFIG_PACKAGE_kmod-random-core=y
+          CONFIG_PACKAGE_kmod-tpm=y
           CONFIG_PACKAGE_kmod-tun=y
           CONFIG_PACKAGE_libatomic=y
           CONFIG_PACKAGE_libattr=y
@@ -111,9 +135,12 @@ jobs:
           CONFIG_PACKAGE_libcurl=y
           CONFIG_PACKAGE_libdaemon=y
           CONFIG_PACKAGE_libdbus=y
+          CONFIG_PACKAGE_libdevmapper=y
           CONFIG_PACKAGE_libelf=y
           CONFIG_PACKAGE_libexpat=y
           CONFIG_PACKAGE_libgnutls=y
+          CONFIG_PACKAGE_libkeyutils=y
+          CONFIG_PACKAGE_libmount=y
           CONFIG_PACKAGE_libnghttp2=y
           CONFIG_PACKAGE_libpopt=y
           CONFIG_PACKAGE_libreadline=y
@@ -121,11 +148,13 @@ jobs:
           CONFIG_PACKAGE_libtasn1=y
           CONFIG_PACKAGE_libtirpc=y
           CONFIG_PACKAGE_liburing=y
+          CONFIG_PACKAGE_libwrap=y
           CONFIG_PACKAGE_libyaml=y
           CONFIG_PACKAGE_luci-app-arpbind=y
           CONFIG_PACKAGE_luci-app-autoreboot=y
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk is not set
+          CONFIG_PACKAGE_luci-app-nfs=y
           CONFIG_PACKAGE_luci-app-openclash=y
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
@@ -134,11 +163,18 @@ jobs:
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-nfs-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
           CONFIG_PACKAGE_minieap=y
           CONFIG_PACKAGE_miniupnpd-nftables=y
+          CONFIG_PACKAGE_mount-utils=y
+          CONFIG_PACKAGE_nfs-kernel-server=y
+          CONFIG_PACKAGE_nfs-kernel-server-utils=y
+          CONFIG_PACKAGE_nfs-utils=y
+          CONFIG_PACKAGE_nfs-utils-libs=y
+          CONFIG_PACKAGE_rpcbind=y
           CONFIG_PACKAGE_ruby=y
           CONFIG_PACKAGE_ruby-bigdecimal=y
           CONFIG_PACKAGE_ruby-date=y
@@ -155,6 +191,8 @@ jobs:
           CONFIG_PACKAGE_vlmcsd=y
           CONFIG_PACKAGE_wsdd2=y
           CONFIG_PACKAGE_zlib=y
+          CONFIG_RPCBIND_LIBWRAP=y
+          CONFIG_RPCBIND_RMTCALLS=y
           CONFIG_SAMBA4_SERVER_AVAHI=y
           CONFIG_SAMBA4_SERVER_NETBIOS=y
           CONFIG_SAMBA4_SERVER_VFS=y
